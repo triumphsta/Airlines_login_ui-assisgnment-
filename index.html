@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Login Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Sky Airlines</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+<br>
+  <div class="login-container">
+    <h2>Login</h2>
+    <p class="subtitle">Please enter your details to sign in</p>
+
+  
+
+   
+    <form id="loginForm" novalidate>
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="name@company.com" required>
+        <span class="error-message" id="emailError"></span>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="••••••••" required>
+          <button type="button" id="togglePassword" class="toggle-btn" aria-label="Toggle password visibility">Show</button>
+        </div>
+        <span class="error-message" id="passwordError"></span>
+      </div>
+
+      <div class="form-actions">
+        <label class="remember-me">
+          <input type="checkbox" id="remember"> Remember me
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="submit-btn">Sign In</button>
+    </form>
+    
+     <div class="divider">or sign in with</div>
+     
+
+    
+ 
+    <div class="oauth-group">
+      <button type="button" class="oauth-btn google" id="googleSignIn">
+        <image src="asssests/googlepng.png" alt="Google Logo" class="oauth-logo" style="width: 50px;">
+        Continue with Google
+      </button>
+    </div>
+    
+   <p class="signup-redirect">Don't have an account? <a href="#">Sign up</a></p> 
+    
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
